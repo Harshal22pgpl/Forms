@@ -1,4 +1,4 @@
-"use client"
+"use client";
 // components/AntiRaggingForm.js
 
 import React, { useState } from "react";
@@ -157,8 +157,7 @@ const AntiRaggingForm = () => {
               className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-red-500 focus:ring-red-500"
             />
           </div>
-        
-        
+
           <div>
             <label
               htmlFor="motherName"
@@ -305,93 +304,90 @@ const AntiRaggingForm = () => {
           </div>
         </div>
         <div>
-            <label className="block text-sm font-medium text-gray-700">
-              Witnesses
+          <label className="block text-sm font-medium text-gray-700">
+            Witnesses
+          </label>
+          <div className="mt-2 space-y-2 grid grid-cols-2">
+            <label className="inline-flex items-center">
+              <input
+                type="checkbox"
+                name="witnesses"
+                value="Classmate"
+                checked={formData.witnesses.includes("Classmate")}
+                onChange={handleWitnessChange}
+                className="form-checkbox h-5 w-5 text-red-600"
+              />
+              <span className="ml-2 text-gray-700">Classmate</span>
             </label>
-            <div className="mt-2 space-y-2 grid grid-cols-2">
-             
-
-             
-              <label className="inline-flex items-center">
-                <input
-                  type="checkbox"
-                  name="witnesses"
-                  value="Classmate"
-                  checked={formData.witnesses.includes("Classmate")}
-                  onChange={handleWitnessChange}
-                  className="form-checkbox h-5 w-5 text-red-600"
-                />
-                <span className="ml-2 text-gray-700">Classmate</span>
-              </label>
-              <label className="inline-flex items-center">
-                <input
-                  type="checkbox"
-                  name="witnesses"
-                  value="Teacher"
-                  checked={formData.witnesses.includes("Teacher")}
-                  onChange={handleWitnessChange}
-                  className="form-checkbox h-5 w-5 text-red-600"
-                />
-                <span className="ml-2 text-gray-700">Teacher</span>
-              </label>
-              <label className="inline-flex items-center">
-                <input
-                  type="checkbox"
-                  name="witnesses"
-                  value="Neighbor"
-                  checked={formData.witnesses.includes("Neighbor")}
-                  onChange={handleWitnessChange}
-                  className="form-checkbox h-5 w-5 text-red-600"
-                />
-                <span className="ml-2 text-gray-700">Neighbor</span>
-              </label>
-              <label className="inline-flex items-center">
-                <input
-                  type="checkbox"
-                  name="witnesses"
-                  value="Security Guard"
-                  checked={formData.witnesses.includes("Security Guard")}
-                  onChange={handleWitnessChange}
-                  className="form-checkbox h-5 w-5 text-red-600"
-                />
-                <span className="ml-2 text-gray-700">Security Guard</span>
-              </label>
-              <label className="inline-flex items-center">
-                <input
-                  type="checkbox"
-                  name="witnesses"
-                  value="Staff Member"
-                  checked={formData.witnesses.includes("Staff Member")}
-                  onChange={handleWitnessChange}
-                  className="form-checkbox h-5 w-5 text-red-600"
-                />
-                <span className="ml-2 text-gray-700">Staff Member</span>
-              </label>
-              <label className="inline-flex items-center">
-                <input
-                  type="checkbox"
-                  name="witnesses"
-                  value="Roommate"
-                  checked={formData.witnesses.includes("Roommate")}
-                  onChange={handleWitnessChange}
-                  className="form-checkbox h-5 w-5 text-red-600"
-                />
-                <span className="ml-2 text-gray-700">Roommate</span>
-              </label>
-              <label className="inline-flex items-center">
-                <input
-                  type="checkbox"
-                  name="witnesses"
-                  value="Senior Student"
-                  checked={formData.witnesses.includes("Senior Student")}
-                  onChange={handleWitnessChange}
-                  className="form-checkbox h-5 w-5 text-red-600"
-                />
-                <span className="ml-2 text-gray-700">Senior Student</span>
-              </label>
-              {/* Add more witness options */}
-            </div>
+            <label className="inline-flex items-center">
+              <input
+                type="checkbox"
+                name="witnesses"
+                value="Teacher"
+                checked={formData.witnesses.includes("Teacher")}
+                onChange={handleWitnessChange}
+                className="form-checkbox h-5 w-5 text-red-600"
+              />
+              <span className="ml-2 text-gray-700">Teacher</span>
+            </label>
+            <label className="inline-flex items-center">
+              <input
+                type="checkbox"
+                name="witnesses"
+                value="Neighbor"
+                checked={formData.witnesses.includes("Neighbor")}
+                onChange={handleWitnessChange}
+                className="form-checkbox h-5 w-5 text-red-600"
+              />
+              <span className="ml-2 text-gray-700">Neighbor</span>
+            </label>
+            <label className="inline-flex items-center">
+              <input
+                type="checkbox"
+                name="witnesses"
+                value="Security Guard"
+                checked={formData.witnesses.includes("Security Guard")}
+                onChange={handleWitnessChange}
+                className="form-checkbox h-5 w-5 text-red-600"
+              />
+              <span className="ml-2 text-gray-700">Security Guard</span>
+            </label>
+            <label className="inline-flex items-center">
+              <input
+                type="checkbox"
+                name="witnesses"
+                value="Staff Member"
+                checked={formData.witnesses.includes("Staff Member")}
+                onChange={handleWitnessChange}
+                className="form-checkbox h-5 w-5 text-red-600"
+              />
+              <span className="ml-2 text-gray-700">Staff Member</span>
+            </label>
+            <label className="inline-flex items-center">
+              <input
+                type="checkbox"
+                name="witnesses"
+                value="Roommate"
+                checked={formData.witnesses.includes("Roommate")}
+                onChange={handleWitnessChange}
+                className="form-checkbox h-5 w-5 text-red-600"
+              />
+              <span className="ml-2 text-gray-700">Roommate</span>
+            </label>
+            <label className="inline-flex items-center">
+              <input
+                type="checkbox"
+                name="witnesses"
+                value="Senior Student"
+                checked={formData.witnesses.includes("Senior Student")}
+                onChange={handleWitnessChange}
+                className="form-checkbox h-5 w-5 text-red-600"
+              />
+              <span className="ml-2 text-gray-700">Senior Student</span>
+            </label>
+            {/* Add more witness options */}
           </div>
+        </div>
         <div>
           <button
             type="submit"
