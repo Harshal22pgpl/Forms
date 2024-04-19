@@ -164,7 +164,7 @@ const AntiRaggingForm = () => {
               htmlFor="motherName"
               className="block text-sm font-medium text-gray-700"
             >
-              Mother's Name
+              Mother&apos;s Name
             </label>
             <input
               type="text"
@@ -180,7 +180,7 @@ const AntiRaggingForm = () => {
               htmlFor="fatherName"
               className="block text-sm font-medium text-gray-700"
             >
-              Father's Name
+              Father&apos;s Name
             </label>
             <input
               type="text"
@@ -196,7 +196,7 @@ const AntiRaggingForm = () => {
               htmlFor="motherPhone"
               className="block text-sm font-medium text-gray-700"
             >
-              Mother's Phone
+              Mother&apos;s Phone
             </label>
             <input
               type="text"
@@ -212,7 +212,7 @@ const AntiRaggingForm = () => {
               htmlFor="fatherPhone"
               className="block text-sm font-medium text-gray-700"
             >
-              Father's Phone
+              Father&apos;s Phone
             </label>
             <input
               type="text"
@@ -228,7 +228,7 @@ const AntiRaggingForm = () => {
               htmlFor="motherEmail"
               className="block text-sm font-medium text-gray-700"
             >
-              Mother's Email
+              Mother&apos;s Email
             </label>
             <input
               type="email"
@@ -244,7 +244,7 @@ const AntiRaggingForm = () => {
               htmlFor="fatherEmail"
               className="block text-sm font-medium text-gray-700"
             >
-              Father's Email
+              Father&apos;s Email
             </label>
             <input
               type="email"
